@@ -1,0 +1,50 @@
+<DOCTYPE! html>
+
+<html>
+<head>
+    <script src="./app.js"></script>
+    <link href="./nav.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div id="navigation">
+        </div>
+        <script>setNav();</script>
+    </nav>
+    <section class="project_description">
+        <h1>Electricity</h1>
+        <p>Goal: Build a compound machine that converts electrical energy into mechanical energy.</p>
+    </section>
+    <section class="engineering_notebook">
+        <h1>Engineering Notebook</h1>
+        <div class="slideshow">
+            <img src="./images/e_e1.png" id="engineering_slideshow">
+            <script>
+                var imge = ["e_e1.png", "e_e2.png", "e_e3.png"];
+                document.getElementById("engineering_slideshow").onclick = function(){switchImage(imge, 1, "engineering_slideshow")};
+            </script>
+        </div>
+    </section>
+    <section class="photos">
+        <h1>Photo of Build</h1>
+        <img src="./images/e_build.png" id="electricity_build" width="400px">
+    </section>
+    <section class="photos">
+        <h1>Tinkercad Images</h1>
+        <div class="slideshow">
+            <img src="./images/e_p1.png" id="photo_slideshow">
+            <script>
+                var imgp = ["e_p1.png", "e_p2.png", "e_p3.png"];
+                document.getElementById("photo_slideshow").onclick = function(){switchImage(imgp, 1, "photo_slideshow")};
+            </script>
+        </div>
+    </section>
+    <section class="video_presentation">
+        <h1>Video Presentation</h1>
+        <iframe width="560" height="330" src="https://www.youtube.com/embed/PaG6GBpSz1I" title="Electricity Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    </section>
+
+</body>
+</html>

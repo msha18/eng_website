@@ -1,0 +1,17 @@
+body {
+    background-image: linear-gradient(#bdb5d5, #87ceeb);
+}
+
+.project_description {
+    position: relative; 
+    padding: 70px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.engineering_notebook, .photos, .video_presentation {
+    position: relative; 
+    text-align: center;
+    padding: 20px;
+}
+

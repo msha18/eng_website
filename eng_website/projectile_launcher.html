@@ -1,0 +1,46 @@
+<DOCTYPE! html>
+
+<html>
+<head>
+    <script src="./app.js"></script>
+    <link href="./nav.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div id="navigation">
+        </div>
+        <script>setNav();</script>
+    </nav>
+    <section class="project_description">
+        <h1>Projectile Launcher</h1>
+        <p>Goal: Create a projectile launcher that can adjust its launch angle.</p>
+    </section>
+    <section class="engineering_notebook">
+        <h1>Engineering Notebook</h1>
+        <div class="slideshow">
+            <img src="./images/pl_e1.png" id="engineering_slideshow">
+            <script>
+                var imge = ["pl_e1.png", "pl_e2.png", "pl_e3.png", "pl_e4.png"];
+                document.getElementById("engineering_slideshow").onclick = function(){switchImage(imge, 1, "engineering_slideshow")};
+            </script>
+        </div>
+    </section>
+    <section class="photos">
+        <h1>Photos</h1>
+        <div class="slideshow">
+            <img src="./images/pl_p1.png" id="photo_slideshow">
+            <script>
+                var imgp = ["pl_p1.png", "pl_p2.png", "pl_p3.png", "pl_p4.png"];
+                document.getElementById("photo_slideshow").onclick = function(){switchImage(imgp, 1, "photo_slideshow")};
+            </script>
+        </div>
+    </section>
+    <section class="video_presentation">
+        <h1>Video Presentation</h1>
+        <iframe width="560" height="330" src="https://www.youtube.com/embed/odGGQvOcd2U" title="Projectile Launcher Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    </section>
+
+</body>
+</html>
